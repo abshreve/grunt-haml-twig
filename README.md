@@ -1,6 +1,6 @@
-# grunt-haml-php
+# grunt-haml-twig
 
-> Process HAML templates using MtHaml, a PHP port of Haml.
+> Process HAML templates using MtHaml, a Twig port of Haml.
 
 ## Getting Started
 This plugin requires Grunt `~0.4.1`
