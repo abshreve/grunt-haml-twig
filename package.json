@@ -1,15 +1,15 @@
 {
-  "name": "grunt-haml-php",
-  "description": "Process HAML templates using MtHaml, a PHP port of Haml.",
+  "name": "grunt-haml-twig",
+  "description": "Process HAML templates using MtHaml, a Twig port of Haml.",
   "version": "0.2.1",
-  "homepage": "https://github.com/alexluke/grunt-haml-php",
+  "homepage": "https://github.com/rkingon/grunt-haml-twig",
   "author": {
     "name": "Alex Luke",
     "email": "alexl@bnj.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/alexluke/grunt-haml-php.git"
+    "url": "git://github.com/rkingon/grunt-haml-twig.git"
   },
   "bugs": {
     "url": "https://github.com/alexluke/grunt-haml-php/issues"
