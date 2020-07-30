@@ -25,7 +25,7 @@ module.exports = function(grunt) {
     });
 
     grunt.verbose.writeflags(options, 'Options');
-
+    var temp = this.files;
     async.forEach(this.files, function(f, callback) {
       var validFiles = removeInvalidFiles(f);
 
@@ -33,10 +33,10 @@ module.exports = function(grunt) {
         if (err) {
           grunt.log.warn(err);
           if (options.writeError) {
-            writeFile(f.dest, err);
+            writeFile(temp[0].orig.dest + f.dest.replace(/^.*[\\\/]/, ''), err);
           }
         } else {
-          writeFile(f.dest, results.join(grunt.util.normalizelf(options.separator)));
+          writeFile(temp[0].orig.dest + f.dest.replace(/^.*[\\\/]/, ''), results.join(grunt.util.normalizelf(options.separator)));
         }
         callback();
       });
